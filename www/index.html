@@ -176,7 +176,11 @@
             </p>
 
             <p class="offering__paragraph offering__paragraph--centered  offering__paragraph--fz--md">
-              To complete the registration of your account, you need to have some money in it. We grant you <span class="offering__paragraph-emphasis">10000 RAY</span> to get you started
+              To complete the registration of your account, you need to have some money in it.
+            </p>
+
+            <p class="offering__paragraph offering__paragraph--centered  offering__paragraph--fz--md">
+              We grant you <span class="offering__paragraph-emphasis">10000 RAY</span> to get you started
             </p>
           </div>
         </div>
@@ -203,9 +207,115 @@
   </div>
 </div>
 
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          You’ve nailed it! With a functioning account, it is easy to become a witness. Here is how you can do that:
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> create_witness my-very-new-account "https://flacon.array.io" true</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          To see the history of all the actions, simply type:
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> get_account_history flacon, 10</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          We’re happy to make friends with you! We can vote for your witness:
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> vote_for_witness arrayio my-very-new-account true true</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          You can also vote for yourself:
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> vote_for_witness my-very-new-account my-very-new-account true true</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          To complete the process, you need to type in the following line. It is supposed to present all the information on your account that you have in the witness node.
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ LC_ALL=C ./witness_node --data-dir=./newton --genesis-json=newton/main_genesis.json --rpc-endpoint=127.0.0.1:8090 --api-access=newton/api-access.json --witness-id '"1.5.22"' --private-key '["RAY5xMr8JuFtDHCZ7wjKGUYksdsXREfcpxxcojjT371Qeo1F3MARL","5KbUiwxz2uh4tmcfaUKo1SVPrxg9MkxYJnqP2sYjchdTdSozZ6R"]'</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  
+
+  <div class="container-fluid footer">
+  <div class="row">
+    <div class="col-12">
+      <div class="container footer__content">
+        <div class="row">
+          <div class="col-12">
+            <p class="footer__paragraph footer__paragraph--emphasis">Good work!</p>
+            <p class="footer__paragraph">Your witness is successfully created. To swing into further actions as a witness, you can use your ID and a private key.</p>
+            <p class="footer__paragraph">Let’s keep in touch!</p>
+            <p class="footer__paragraph">Cheers!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>

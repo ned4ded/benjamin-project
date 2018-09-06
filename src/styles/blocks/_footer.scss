@@ -1,0 +1,24 @@
+.footer {
+  padding-bottom: 250px;
+  padding-top: 125px;
+  background: linear-gradient(to top, rgb(0, 0, 52), rgb(0, 0, 32) 100%);
+
+  &__paragraph {
+    font-family: $ff-sans;
+    font-weight: 400;
+    font-size: $fz-md;
+    line-height: 1.12;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+
+    &--emphasis {
+      font-size: 46px;
+      font-family: $ff-roboto;
+      font-weight: 700;
+      margin-bottom: 45px;
+      text-transform: uppercase;
+    }
+  }
+}

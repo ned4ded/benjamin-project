@@ -181,3 +181,24 @@ body {
         margin-bottom: 15px;
         font-size: 18px;
         font-family: "Roboto Mono", monospace; }
+
+.footer {
+  padding-bottom: 250px;
+  padding-top: 125px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000034), to(#000020));
+  background: linear-gradient(to top, #000034, #000020 100%); }
+  .footer__paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.12;
+    color: white;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center; }
+    .footer__paragraph--emphasis {
+      font-size: 46px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      margin-bottom: 45px;
+      text-transform: uppercase; }
