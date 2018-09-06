@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="container-fluid about">
+  <div class="row">
+    <div class="col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 about">
+
+            <p class="about__paragraph">
+              Here you will find a simple guide to becoming a witness with Array.io. It has fifteen easy steps that could be joined together into three stages: installing the necessary libraries and software, creating a wallet with your account and creating a witness. As you can see, this is not going to take you long. <span class="about__interjection">Enjoy the build!</span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid offering">
+  <div class="row">
+    <div class="col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 offering__content">
+            <p class="offering__paragraph">
+              Install array-io node software
+            </p>
+
+            <a class="offering__link" href="#">
+              {# <span class="offering__link-icon offering__link-icon--github"></span> #}
+              <span class="offering__link-text">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "partials/instructions.njk" %}
+{% endblock %}

@@ -1,0 +1,18 @@
+.about {
+  background-color: $color-main-grey;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+
+  &__paragraph {
+    color: rgba($color-main-dark, .9);
+    font-size: $fz-md;
+    font-family: $ff-sans;
+    text-align: center;
+  }
+
+  &__interjection {
+    display: block;
+    margin-top: 50px;
+  }
+}

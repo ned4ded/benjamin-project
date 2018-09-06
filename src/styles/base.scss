@@ -1,0 +1,8 @@
+@import './variables/base.scss';
+
+body {
+  min-width: 450px;
+  margin: 0;
+}
+
+@import './blocks/base.scss';

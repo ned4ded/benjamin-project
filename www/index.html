@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Array.io Node</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="container-fluid header">
+  <div class="row">
+    <div class="col-12">
+      <div class="container">
+        <div class="row">
+          <header class="col-12 header__content">
+
+            <img class="header__logo" src="assets/imgs/array_logo_dark_bg.png" width="500" height="522" alt="Array.io Logotype">
+            <h1 class="header__heading">Array-io-core Build Instruction</h1>
+            <p class="header__paragraph">How to become a witness</p>
+
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+<div class="container-fluid about">
+  <div class="row">
+    <div class="col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 about">
+
+            <p class="about__paragraph">
+              Here you will find a simple guide to becoming a witness with Array.io. It has fifteen easy steps that could be joined together into three stages: installing the necessary libraries and software, creating a wallet with your account and creating a witness. As you can see, this is not going to take you long. <span class="about__interjection">Enjoy the build!</span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid offering">
+  <div class="row">
+    <div class="col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 offering__content">
+            <p class="offering__paragraph">
+              Install array-io node software
+            </p>
+
+            <a class="offering__link" href="#">
+              
+              <span class="offering__link-text">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          If you’re using MacOS, run the following command to ensure that you have everything a Linux user has.
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ cmake -DLINUX_SIGACTION_SIGSEGV=DISABLE ..</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          You should be able to spawn four threads. Alternatively, if you process with eight cores, you can make eight threads. Choose it according to your core/CPU environment, so that it works efficiently.
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ make -j4</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          Connect to ‘newton.array.io’ and create a wallet with a chain ID. After the build you will get access the ‘programs’ directory which contains CliWallet and WitnessNode.
+        </p>
+
+        <p class="instruction__paragraph">
+          <span class="instruction__note">CliWallet is a client that connects you to the wallet. </span><span class="instruction__note">WitnessNode is your own personal node.</span>
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ ./programs/cli_wallet/cli_wallet -s ws://newton.array.io:8090 --chain-id b6b83a593686087531ce581540564d20b2f75ff9879e9dd2eccfa9a79744b949</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+          <p class="instruction__paragraph instruction__paragraph--margin--large">
+            You’re almost there! Create a password for your brand-new wallet and unlock it. You will know that you’ve done this when the line says ‘unlocked’ instead of ‘locked’.
+          </p>
+
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <img class="instruction__screenshot" src="assets/imgs/step-4-console-screenshot.jpg" alt="Console Output Example">
+            </div>
+
+            <p class="col-12 col-md-6 instruction__screenshot-caption">
+              <span class="instruction__screenshot-caption-line">locked >>> set_password secret-password-here </span><span class="instruction__screenshot-caption-line">locked >>> unlock secret-password-here </span><span class="instruction__screenshot-caption-line">unlocked >>></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          To check the balance in all your accounts, you can do the following: 
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> list_account_balances my-very-new-account, 1</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
