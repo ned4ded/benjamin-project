@@ -165,7 +165,11 @@ body {
     border-radius: 5px;
     border-bottom: 10px solid black;
     -webkit-box-shadow: 0 17px 25px 5px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 17px 25px 5px rgba(0, 0, 0, 0.23); }
+            box-shadow: 0 17px 25px 5px rgba(0, 0, 0, 0.23);
+    margin-bottom: 25px; }
+    @media (min-width: 1200px) {
+      .instruction__screenshot {
+        margin-bottom: 0; } }
     .instruction__screenshot-caption {
       display: -webkit-box;
       display: -ms-flexbox;
