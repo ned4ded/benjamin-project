@@ -1,8 +1,12 @@
 .header {
-  padding-top: 250px;
+  padding-top: 125px;
   padding-bottom: 125px;
 
   background:linear-gradient(to bottom, rgb(0, 0, 52), rgba(0, 0, 32, 1) 100%);
+
+  @include respond-to(md) {
+    padding-top: 250px
+  }
 
   &__content {
     display: flex;

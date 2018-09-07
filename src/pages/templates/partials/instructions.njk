@@ -8,7 +8,7 @@
           If you’re using MacOS, run the following command to ensure that you have everything a Linux user has.
         </p>
 
-        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ cmake -DLINUX_SIGACTION_SIGSEGV=DISABLE ..</span></code></pre>
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ cmake -DLINUX_SIGACTION_SIGSEGV=DISABLE .. </span></code></pre>
 
         </div>
       </div>
@@ -26,7 +26,7 @@
           You should be able to spawn four threads. Alternatively, if you process with eight cores, you can make eight threads. Choose it according to your core/CPU environment, so that it works efficiently.
         </p>
 
-        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ make -j4</span></code></pre>
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ make -j4 </span></code></pre>
 
         </div>
       </div>
@@ -48,7 +48,7 @@
           <span class="instruction__note">CliWallet is a client that connects you to the wallet. </span><span class="instruction__note">WitnessNode is your own personal node.</span>
         </p>
 
-        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ ./programs/cli_wallet/cli_wallet -s ws://newton.array.io:8090 --chain-id b6b83a593686087531ce581540564d20b2f75ff9879e9dd2eccfa9a79744b949</span></code></pre>
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ ./programs/cli_wallet/cli_wallet -s ws://newton.array.io:8090 --chain-id b6b83a593686087531ce581540564d20b2f75ff9879e9dd2eccfa9a79744b949 </span></code></pre>
 
         </div>
       </div>
@@ -209,7 +209,7 @@
           To complete the process, you need to type in the following line. It is supposed to present all the information on your account that you have in the witness node.
         </p>
 
-        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ LC_ALL=C ./witness_node --data-dir=./newton --genesis-json=newton/main_genesis.json --rpc-endpoint=127.0.0.1:8090 --api-access=newton/api-access.json --witness-id '"1.5.22"' --private-key '["RAY5xMr8JuFtDHCZ7wjKGUYksdsXREfcpxxcojjT371Qeo1F3MARL","5KbUiwxz2uh4tmcfaUKo1SVPrxg9MkxYJnqP2sYjchdTdSozZ6R"]'</span></code></pre>
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">$ LC_ALL=C ./witness_node --data-dir=./newton --genesis-json=newton/main_genesis.json --rpc-endpoint=127.0.0.1:8090 --api-access=newton/api-access.json --witness-id '"1.5.22"' --private-key '["RAY5xMr8JuFtDHCZ7wjKGUYksdsXREfcpxxcojjT371Qeo1F3MARL","5KbUiwxz2uh4tmcfaUKo1SVPrxg9MkxYJnqP2sYjchdTdSozZ6R"]' </span></code></pre>
 
         </div>
       </div>
