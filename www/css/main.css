@@ -61,6 +61,9 @@ body {
     border-top: none;
     border-bottom: 1px solid #e6e6e6;
     background: linear-gradient(-65deg, #f3f3f3 25%, #e6e6e6); }
+  .offering--padding--sm {
+    padding-top: 25px;
+    padding-bottom: 25px; }
   .offering__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -90,6 +93,8 @@ body {
     .offering__paragraph-emphasis {
       color: #00aaff;
       font-weight: 700; }
+      .offering__paragraph-emphasis--grey {
+        color: rgba(0, 0, 32, 0.4); }
   .offering--grey .offering__paragraph {
     color: rgba(0, 0, 32, 0.4); }
   .offering__link {
