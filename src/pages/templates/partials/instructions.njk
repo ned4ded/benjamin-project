@@ -116,6 +116,60 @@
         <div class="col-12 instruction__content">
 
         <p class="instruction__paragraph">
+          Generate a key pair
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">>> suggest_brain_key</span></code></pre>
+
+        <p class="instruction__paragraph">
+          You will get an output of this kind:
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">{
+  "brain_priv_key": "VOLET BUZZING BLASTID QUOITS RALPH WHIBA VAGUITY SONLIKE OUTGROW MISBORN CLOTBUR FRIZZER TONG DAND CARTER VERVAIN",
+  "wif_priv_key": "5KaGG9t31Ajmgkm1Y8ymHDGL4czn2Su2jbjKHoYy2fYkNSPjCM7",
+  "pub_key": "RAY5T5D5p3Cddo97tTA1d1iSKxHEMazthLtyUpiLpXu8rLYVyHxrH"
+}</span></code></pre>
+
+        <p class="instruction__paragraph">
+          Memorize the private key! It will be linked to the account that we create for you.
+        </p>
+
+        <p class="instruction__paragraph">
+          Note: The hash from the brain key gives you a private key. The hash of that hash produces a public key. If you lose a public key, you can get it from your private key. If you lose a private one, you it can be accessed through the brain key.
+        </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
+          Now you need to import your private key:
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">>> import_key my-very-new-account &lt;your private here&gt;</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
           To check the balance in all your accounts, you can do the following:
         </p>
 
@@ -152,6 +206,24 @@
         <div class="col-12 instruction__content">
 
         <p class="instruction__paragraph">
+          To get private keys for your witness, you should do
+        </p>
+
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">>> dump_private_keys</span></code></pre>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid instructions">
+  <div class="row instruction">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 instruction__content">
+
+        <p class="instruction__paragraph">
           To see the history of all the actions, simply type:
         </p>
 
@@ -170,28 +242,10 @@
         <div class="col-12 instruction__content">
 
         <p class="instruction__paragraph">
-          We’re happy to make friends with you! We can vote for your witness:
+          You can vote for your witness:
         </p>
 
-        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> vote_for_witness arrayio my-very-new-account true true</span></code></pre>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid instructions">
-  <div class="row instruction">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 instruction__content">
-
-        <p class="instruction__paragraph">
-          You can also vote for yourself:
-        </p>
-
-        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> vote_for_witness my-very-new-account my-very-new-account true true</span></code></pre>
+        <pre class="instruction__code"><code class="instruction__code-content"><span class="instruction__code-line">unlocked >>> vote_for_witness my-very-new-account true </span></code></pre>
 
         </div>
       </div>
