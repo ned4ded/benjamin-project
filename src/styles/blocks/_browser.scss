@@ -1,0 +1,206 @@
+.browser {
+  width: 100%;
+  max-width: 800px;
+  margin: 0;
+
+  border-top: 1px solid rgba(0, 0, 32, 0.1);
+  border-right: 1px solid rgba(0, 0, 32, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 32, 0.1);
+  border-left: 1px solid rgba(0, 0, 32, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 0 16px rgba(0, 0, 20, 0.15);
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 24px;
+    margin: 0;
+
+    text-align: center;
+    text-align: center;
+
+    color: RGB(77, 73, 77);
+    border-top: 1px solid RGB(243, 243, 243);
+    border-bottom: 1px solid RGB(177, 174, 177);
+    border-radius: 6px 6px 0px 0px;
+    background: url('../assets/imgs/macos-btns.png'), linear-gradient(to bottom, #ebebeb, #d5d5d5);
+    background-repeat: no-repeat;
+    background-position: 5px center, center;
+    background-size: auto 12px, auto;
+
+    font-family: $ff-sans;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__site {
+    margin: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    padding: 7px 10px;
+
+    background-color: rgb(36, 41, 46);
+
+    &-icon {
+      width: 25px;
+      height: auto;
+
+      fill: white;
+    }
+  }
+
+  &__body {
+    padding: 7px 10px;
+
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+
+
+  }
+
+  &__form {
+    position: relative;
+
+    border: 1px solid hsl(213, 11%, 84%);
+    border-radius: 3px;
+    background-color: hsl(0, 0%, 100%);
+
+    &-title {
+      min-height: 34px;
+      margin: 10px;
+      padding: 6px 8px;
+
+      vertical-align: middle;
+
+      color: hsl(210, 12%, 16%);
+      border: 1px solid hsl(213, 11%, 84%);
+      border-radius: 3px;
+      outline: none;
+      background: hsl(210, 29%, 97%);
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+
+      font-family: $ff-sans;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &-tools {
+      margin-bottom: 10px;
+      padding: 0 10px 0;
+      padding-top: 0;
+
+      border-bottom: 1px solid hsl(213, 11%, 84%);
+      border-radius: 3px 3px 0 0;
+      background-color: hsl(0, 0%, 100%);
+      background-image: url('../assets/imgs/github-form-tools.png');
+      background-repeat: no-repeat;
+      background-position: calc(100% - 10px) center;
+      background-size: auto 15px;
+    }
+
+    &-tab {
+      display: inline-block;
+
+          margin-bottom: -1px;
+      padding: 8px 12px;
+
+      text-decoration: none;
+
+      color: hsl(212, 9%, 38%);
+      border: 1px solid hsla(0, 0%, 0%, 0);
+      border: 1px solid hsla(0, 0%, 0%, 0);
+      border-bottom: 0;
+      border-bottom: 0;
+      background-color: hsla(0, 0%, 0%, 0);
+
+      font-family: $ff-sans;
+      font-size: 14px;
+      line-height: 20px;
+
+      &--active {
+        color: hsl(210, 12%, 16%);
+        border-color: hsl(213, 11%, 84%);
+        border-radius: 3px 3px 0 0;
+        background-color: hsl(0, 0%, 100%);
+      }
+    }
+  }
+
+  &__textarea {
+    position: relative;
+    z-index: auto;
+
+    display: block;
+
+    height: 198px;
+    min-height: 175px;
+    margin: 0 8px 8px;
+    padding: 8px;
+
+    resize: vertical;
+    transition: none 0s ease 0s;
+
+    color: hsl(210, 12%, 16%);
+    border: 1px solid hsl(213, 11%, 84%);
+    border-radius: 3px;
+    background: hsla(0, 0%, 0%, 0) !important;
+
+    font-family: $ff-sans;
+    font-size: 14px;
+    line-height: 22.4px;
+
+    &-line {
+      display: block;
+    }
+  }
+
+  &__btn-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__btn {
+    position: relative;
+
+    display: inline-block;
+
+    padding: 9px 14px 7px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 1px solid hsla(210, 13%, 12%, 0.2);
+    border-radius: 0.25em;
+    background-color: hsl(134, 61%, 41%);
+    background-image: linear-gradient(-180deg,hsl(134, 62%, 51%) 0%,hsl(134, 61%, 41%) 90%);
+
+    font-family: $ff-roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: hsl(134, 61%, 39%);
+      background-image: linear-gradient(-180deg,hsl(134, 62%, 49%) 0%,hsl(134, 61%, 39%) 90%);
+      border-color: hsla(210, 13%, 12%, 0.5);
+    }
+
+    &:active {
+      background-color: hsl(134, 61%, 39%);
+      background-image: none;
+      border-color: hsla(210, 13%, 12%, 0.5);
+      box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15);
+    }
+
+  }
+}

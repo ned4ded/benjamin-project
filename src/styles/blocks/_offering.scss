@@ -54,6 +54,10 @@
       }
     }
 
+    &--margin--lg:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
     &-emphasis {
       color: $color-main-contrast;
       font-weight: 700;

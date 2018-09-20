@@ -90,6 +90,8 @@ body {
       font-weight: 400; }
       .offering__paragraph--fz--md:not(:last-child) {
         margin-bottom: 10px; }
+    .offering__paragraph--margin--lg:not(:last-child) {
+      margin-bottom: 40px; }
     .offering__paragraph-emphasis {
       color: #00aaff;
       font-weight: 700; }
@@ -213,6 +215,166 @@ body {
         margin-bottom: 15px;
         font-size: 18px;
         font-family: "Roboto Mono", monospace; }
+
+.browser {
+  width: 100%;
+  max-width: 800px;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 32, 0.1);
+  border-right: 1px solid rgba(0, 0, 32, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 32, 0.1);
+  border-left: 1px solid rgba(0, 0, 32, 0.1);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 20, 0.15);
+          box-shadow: 0 0 16px rgba(0, 0, 20, 0.15); }
+  .browser__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 24px;
+    margin: 0;
+    text-align: center;
+    text-align: center;
+    color: RGB(77, 73, 77);
+    border-top: 1px solid RGB(243, 243, 243);
+    border-bottom: 1px solid RGB(177, 174, 177);
+    border-radius: 6px 6px 0px 0px;
+    background: url("../assets/imgs/macos-btns.png"), -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#d5d5d5));
+    background: url("../assets/imgs/macos-btns.png"), linear-gradient(to bottom, #ebebeb, #d5d5d5);
+    background-repeat: no-repeat;
+    background-position: 5px center, center;
+    background-size: auto 12px, auto;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px; }
+  .browser__site {
+    margin: 0; }
+  .browser__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7px 10px;
+    background-color: #24292e; }
+    .browser__header-icon {
+      width: 25px;
+      height: auto;
+      fill: white; }
+  .browser__body {
+    padding: 7px 10px;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff; }
+  .browser__form {
+    position: relative;
+    border: 1px solid #d2d6db;
+    border-radius: 3px;
+    background-color: white; }
+    .browser__form-title {
+      min-height: 34px;
+      margin: 10px;
+      padding: 6px 8px;
+      vertical-align: middle;
+      color: #24292e;
+      border: 1px solid #d2d6db;
+      border-radius: 3px;
+      outline: none;
+      background: #f5f7fa;
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      -webkit-box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+              box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 20px; }
+    .browser__form-tools {
+      margin-bottom: 10px;
+      padding: 0 10px 0;
+      padding-top: 0;
+      border-bottom: 1px solid #d2d6db;
+      border-radius: 3px 3px 0 0;
+      background-color: white;
+      background-image: url("../assets/imgs/github-form-tools.png");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 10px) center;
+      background-size: auto 15px; }
+    .browser__form-tab {
+      display: inline-block;
+      margin-bottom: -1px;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #58606a;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-bottom: 0;
+      border-bottom: 0;
+      background-color: rgba(0, 0, 0, 0);
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      line-height: 20px; }
+      .browser__form-tab--active {
+        color: #24292e;
+        border-color: #d2d6db;
+        border-radius: 3px 3px 0 0;
+        background-color: white; }
+  .browser__textarea {
+    position: relative;
+    z-index: auto;
+    display: block;
+    height: 198px;
+    min-height: 175px;
+    margin: 0 8px 8px;
+    padding: 8px;
+    resize: vertical;
+    -webkit-transition: none 0s ease 0s;
+    transition: none 0s ease 0s;
+    color: #24292e;
+    border: 1px solid #d2d6db;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0) !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 22.4px; }
+    .browser__textarea-line {
+      display: block; }
+  .browser__btn-container {
+    text-align: center;
+    margin-top: 10px; }
+  .browser__btn {
+    position: relative;
+    display: inline-block;
+    padding: 9px 14px 7px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgba(27, 31, 35, 0.2);
+    border-radius: 0.25em;
+    background-color: #29a847;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#35d059), color-stop(90%, #29a847));
+    background-image: linear-gradient(-180deg, #35d059 0%, #29a847 90%);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none; }
+    .browser__btn:hover {
+      background-color: #27a043;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#2fca54), color-stop(90%, #27a043));
+      background-image: linear-gradient(-180deg, #2fca54 0%, #27a043 90%);
+      border-color: rgba(27, 31, 35, 0.5); }
+    .browser__btn:active {
+      background-color: #27a043;
+      background-image: none;
+      border-color: rgba(27, 31, 35, 0.5);
+      -webkit-box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+              box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15); }
 
 .footer {
   padding-bottom: 125px;
